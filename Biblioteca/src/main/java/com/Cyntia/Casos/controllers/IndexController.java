@@ -8,7 +8,12 @@ public class IndexController {
 
 	@RequestMapping("/area")
 	public String index() {
-		return "Perito/area";
+		return "Perito/area";}
+		
+		
+		@RequestMapping("/inicial")
+		public String index2() {
+			return "Caso/Inicial";
 		
 	}
 }
