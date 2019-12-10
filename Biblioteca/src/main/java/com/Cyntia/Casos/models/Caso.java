@@ -28,7 +28,6 @@ public class Caso implements Serializable{
 	@NotEmpty
 	private String relatoriofinal;
 	
-	
 	public String getSexo() {
 		return sexo;
 	}

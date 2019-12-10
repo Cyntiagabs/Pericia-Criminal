@@ -48,21 +48,6 @@ public class CasosController {
 			return mv;
 		}
 		
-		@GetMapping("/resolverCaso")
-		public ModelAndView resolver() {
-			ModelAndView mv = new ModelAndView("Perito/CasosResolvidos");
-			Iterable<Caso> casos = cr.findAll();
-			mv.addObject("casos", casos);
-			return mv;
-		}
-		
-		@GetMapping("/Casoresolvidos")
-		public ModelAndView resolvidos() {
-			ModelAndView mv = new ModelAndView("Perito/CasosResolvidos");
-			Iterable<Caso> casos = cr.findAll();
-			mv.addObject("casos", casos);
-			return mv;
-		}
 		
 		@RequestMapping("/deletarCaso")
 		public String deletarCaso(long codigo){
@@ -71,12 +56,7 @@ public class CasosController {
 			return "redirect:/listarcasos" ;
 		}
 		
-		@RequestMapping("/resolverCaso")
-		public String resolverCaso(long codigo){
-			Caso caso = cr.findByCodigo(codigo);
-			cr.delete(caso);
-			return "redirect:/resolverCasos" ;
-		}
+		
 	}	
 
 

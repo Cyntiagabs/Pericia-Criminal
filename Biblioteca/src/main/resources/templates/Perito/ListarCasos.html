@@ -11,7 +11,7 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      
+      <meta charset "utf-8">
 </head>
 
 <head>
@@ -58,7 +58,6 @@ body{
 		
 		
 		<td><a th:href="${(#mvc.url('CC#deletarCaso').arg(0,caso.codigo)).build()}" class="waves-effect waves-light btn black"><i class="material-icons left">delete</i></a></li></td>
-		<td><a th:href="${(#mvc.url('CC#resolverCaso').arg(0,caso.codigo)).build()}" class="waves-effect waves-light btn black"><i class="material-icons left">done</i></a></li></td>
 		</tr>
 	</tbody>
 	</table>
