@@ -1,0 +1,7 @@
+.image3 {
+    background-image: url("\Users\gabri\Desktop/biblioteca-fotos/aluno.jpg");
+    min-height: 400px;
+    overflow: hidden;
+    align-content: right;
+    margin-bottom: 15px;
+}
